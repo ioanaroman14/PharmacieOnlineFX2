@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.shape.Box?>
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="UI.ClientCardController">
+    <HBox alignment="TOP_CENTER">
+        <Label alignment="CENTER" text="Card ID"/>
+        <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="2.0" prefWidth="350.0"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtCardFirstName" promptText="Last Name"/>
+        <TextField fx:id="txtCardLastName" promptText="First Name"/>
+    </HBox>
+    <Pane prefHeight="2.0" prefWidth="350"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtCardCNP" promptText="CNP"/>
+    </HBox>
+    <Label text="Date of birth:"/>
+        <HBox alignment="TOP_CENTER" prefWidth="345">
+            <TextField fx:id="txtCardDayOfBirth" prefHeight="26.0" prefWidth="100.0" promptText="Day"/>
+            <TextField fx:id="txtCardMonthOfBirth" prefHeight="26.0" prefWidth="100.0" promptText="Month"/>
+            <TextField fx:id="txtCardYearOfBirth" prefHeight="26.0" prefWidth="100.0" promptText="Year"/>
+        </HBox>
+    <Label text="Date of registration:"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtCardDayRegistration" prefHeight="26.0" prefWidth="100.0" promptText="Day"/>
+        <TextField fx:id="txtCardMonthRegistration" prefHeight="26.0" prefWidth="100.0" promptText="Month"/>
+        <TextField fx:id="txtCardYearRegistration" prefHeight="26.0" prefWidth="100.0" promptText="Year"/>
+    </HBox>
+    <Pane prefHeight="2.0" prefWidth="350"/>
+    <HBox alignment="TOP_CENTER">
+        <Button fx:id="btnAdd" onAction="#btnAddClick" text="Add"/>
+        <Button fx:id="btnCancel" onAction="#btnCancelClick" text="Cancel"/>
+    </HBox>
+</VBox>
+
+

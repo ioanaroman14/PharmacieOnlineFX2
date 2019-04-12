@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="UI.TransactionController">
+    <HBox alignment="CENTER">
+        <Label text="Transaction ID:"/>
+        <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="12.0" prefWidth="446"/>
+    <HBox alignment="CENTER">
+        <Label text="Medicine Id:"/>
+        <Spinner fx:id="spnIdMedicine" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="10.0" prefWidth="446.0"/>
+    <HBox alignment="center">
+        <Label text="Card ID:"/>
+        <Spinner fx:id="spnIdCard" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="18.0" prefWidth="446.0"/>
+    <HBox alignment="center">
+        <Label text="Date:"/>
+        <HBox alignment="center">
+            <TextField fx:id="txtTransactionDay" promptText="Day"/>
+            <TextField fx:id="txtTransactionMonth" promptText="Month"/>
+            <TextField fx:id="txtTransactionYear" promptText="Year"/>
+        </HBox>
+    </HBox>
+    <Pane prefHeight="18.0" prefWidth="446.0"/>
+    <HBox alignment="center">
+        <Label text="Time:"/>
+        <HBox alignment="center">
+            <TextField fx:id="txtTransactionHour" promptText="Hour"/>
+            <TextField fx:id="txtTransactionMinutes" promptText="Minutes"/>
+        </HBox>
+    </HBox>
+    <Pane prefHeight="10.0" prefWidth="446.0"/>
+    <HBox alignment="center">
+        <Label text="Nr Of Items:"/>
+        <TextField fx:id="nbOfItems" promptText="Number of items"/>
+    </HBox>
+    <Pane prefHeight="10.0" prefWidth="446.0"/>
+    <Pane prefHeight="16.0" prefWidth="446.0"/>
+    <Button fx:id="btnAdd" onAction="#btnAddClick" text="Add"/>
+    <Button fx:id="btnCancel" onAction="#btnCancelClick" text="Cancel"/>
+</VBox>
+
+

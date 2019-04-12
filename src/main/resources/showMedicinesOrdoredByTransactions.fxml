@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ShowMedicinesOrdoredByTransactionsController">
+    <VBox>
+        <Label text="Medicines ordered by transactions">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <HBox>
+            <TableView fx:id="tableViewMedicines" editable="true" prefHeight="375.0" prefWidth="539.0">
+                <columns>
+                    <TableColumn fx:id="tableColumnNameMedicine" prefWidth="455.0" text="Medicine Name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="medicine" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="tableColumnTransactionsNumber" minWidth="0.0" prefWidth="82.0" text="Transactions">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="transactions" />
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </HBox>
+    </VBox>
+</HBox>

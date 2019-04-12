@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="UI.MedicineController">
+    <HBox alignment="TOP_CENTER">
+        <Label text="Movie ID"/>
+        <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="5.0" prefWidth="330.0"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtMedicineName" prefHeight="25.0" prefWidth="110.0" promptText="Name"/>
+        <TextField fx:id="txtMedicineProducer" prefHeight="25.0" prefWidth="110.0" promptText="Producer"/>
+        <TextField fx:id="txtMedicinePrice" prefHeight="25.0" prefWidth="110.0" promptText="Price"/>
+    </HBox>
+    <Pane prefHeight="5.0" prefWidth="330.0"/>
+    <CheckBox fx:id="chkRecipe" text="Recipe"/>
+    <Pane prefHeight="5.0" prefWidth="330.0"/>
+    <HBox alignment="TOP_CENTER">
+        <Button fx:id="btnAdd" onAction="#btnAddClick" text="Add"/>
+        <Button fx:id="btnCancel" onAction="#btnCancelClick" text="Cancel"/>
+    </HBox>
+</VBox>

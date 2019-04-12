@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.RemoveTransactionPeriodController">
+    <HBox alignment="TOP_CENTER">
+        <Label text="Transactions:">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="TOP_CENTER">
+        <TableView fx:id="tableViewTransaction" editable="true" prefHeight="340.0" prefWidth="490.0">
+            <columns>
+                <TableColumn fx:id="tableColumnIdTransaction" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="tableColumnIdMedicineTransaction" text="Medicine id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="idMedicine"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="tableColumnIdClientCardTransaction" text="Client Card id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="idClientCard"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="tableColumnDateOfTransaction" prefWidth="118.0" text="Date of transaction">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="tableColumnTimeOfTransaction" prefWidth="126.0" text="Time of transactions">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="time"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </HBox>
+    <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="742.0">
+        <TextField fx:id="startDay" prefHeight="25.0" prefWidth="65.0" promptText="Day"/>
+        <TextField fx:id="startMonth" prefHeight="25.0" prefWidth="65.0" promptText="Month"/>
+        <TextField fx:id="startYear" prefHeight="25.0" prefWidth="65.0" promptText="Year"/>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" text="and"/>
+        <TextField fx:id="endDay" prefHeight="25.0" prefWidth="65.0" promptText="Day"/>
+        <TextField fx:id="endMonth" prefHeight="25.0" prefWidth="65.0" promptText="Month"/>
+        <TextField fx:id="endYear" prefHeight="25.0" prefWidth="65.0" promptText="Year"/>
+        <Pane prefHeight="100.0" prefWidth="45.0"/>
+        <Button fx:id="deleteButton" onAction="#deleteTransactionsClick" text="Delete"/>
+        <Button fx:id="cancelButton" onAction="#cancelClick" text="Cancel"/>
+        <Button onAction="#btnTransactionsDeleteUndoClick" text="Undo delete transactions" />
+        <Button onAction="#btntransactionsDeleteRedoClick" text="Redo delete transactions" />
+    </HBox>
+</VBox>

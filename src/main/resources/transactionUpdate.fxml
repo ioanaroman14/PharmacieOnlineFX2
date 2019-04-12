@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" prefHeight="305.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.TransactionController">
+    <HBox alignment="center">
+        <Label text="Transaction ID:"/>
+        <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="12.0" prefWidth="446.0"/>
+    <HBox alignment="center">
+        <Label text="Medicine ID:"/>
+        <Spinner fx:id="spnIdMovie" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="10.0" prefWidth="446.0"/>
+
+    <HBox alignment="center">
+        <Label text="Card Client ID:"/>
+        <Spinner fx:id="spnIdCard" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="18.0" prefWidth="446.0"/>
+    <Label text="Date:"/>
+    <HBox alignment="center">
+        <TextField fx:id="txtTransactionDay" promptText="Day"/>
+        <TextField fx:id="txtTransactionMonth" promptText="Month"/>
+        <TextField fx:id="txtTransactionYear" promptText="Year"/>
+    </HBox>
+    <Label text="Time:"/>
+    <HBox alignment="center">
+        <TextField fx:id="txtTransactionHour" promptText="Hour"/>
+        <TextField fx:id="txtTransactionMinutes" promptText="Minutes"/>
+    </HBox>
+    <Pane prefHeight="16.0" prefWidth="446.0"/>
+    <Button fx:id="btnUpdate" onAction="#btnUpdateClick" text="Update"/>
+    <Button fx:id="btnCancel" onAction="#btnCancelClick" text="Cancel"/>
+</VBox>

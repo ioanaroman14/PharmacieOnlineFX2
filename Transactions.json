@@ -1,0 +1,6 @@
+{"idMedicine":"5","idCardClient":"2","date":{"year":1240,"month":12,"day":12},"time":{"hour":12,"minute":12,"second":0,"nano":0},"numberOfItems":12,"basePrice":18.0,"discount":0.15,"id":"1"}
+{"idMedicine":"5","idCardClient":"2","date":{"year":12,"month":12,"day":12},"time":{"hour":12,"minute":4,"second":0,"nano":0},"numberOfItems":10,"basePrice":18.0,"discount":0.15,"id":"2"}
+{"idMedicine":"5","idCardClient":"2","date":{"year":12,"month":12,"day":12},"time":{"hour":12,"minute":4,"second":0,"nano":0},"numberOfItems":10,"basePrice":18.0,"discount":0.15,"id":"4"}
+{"idMedicine":"1","idCardClient":"2","date":{"year":2019,"month":12,"day":19},"time":{"hour":12,"minute":34,"second":0,"nano":0},"numberOfItems":20,"basePrice":19.0,"discount":0.1,"id":"7"}
+{"idMedicine":"1","idCardClient":"2","date":{"year":1234,"month":12,"day":19},"time":{"hour":12,"minute":34,"second":0,"nano":0},"numberOfItems":20,"basePrice":19.0,"discount":0.1,"id":"8"}
+{"idMedicine":"1","idCardClient":"2","date":{"year":2109,"month":12,"day":12},"time":{"hour":12,"minute":3,"second":0,"nano":0},"numberOfItems":34,"basePrice":19.0,"discount":0.1,"id":"10"}
